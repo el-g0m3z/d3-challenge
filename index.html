@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
+  <title>D3 Challenge</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -15,43 +15,67 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
 
 </head>
 
 <body>
-  <div class="container">
+  <div class="container text-center">
     <div class="row">
       <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+        <h1>D3 Homework Challenge</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
-        </div>
+      <div class="col-xs-12  col-md-12 text-center container-fluid">
+        <!-- We append our chart here. -->
+        <div id="scatter"></div>
       </div>
     </div>
-    <br>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-xs-12  col-md-9 text-center container-fluid">
         <div class="article">
-          <h2>Correlations Discovered Obesity Rate (%) and Poverty Rate (%) by state.</h2>
-          <br>
-          <p>Smokes vs. Obesity Rate: As visible, there's a clear correlation between the # of smokes and obesity rate
-            across different states in the US. Interestingly enough, these also seem to be the states with high poverty
-            rate (e.g. LA, AL, WV, etc.).</p>
-          <p>Poverty Rate vs. Obesity Rate: Although not as a strong of a correlation, there's certainly a slight curve
-            that can lead to the conclusion that high obesity rate is correlated to high poverty rate. Again, same
-            states as above are leading the pack.
+          <h2 class="text-center display-6">Income/Poverty/Age by Smoking/Obesity/No Healthcare </h2>
           </p>
+
+          <h6>Cycle through the various metrics above to see how the different states of the US compare.</h6>
+
+          <h3>Percentage of Americans in Poverty vs. X</h3>
+          <p>Comparing poverty levels to % of no healthcare, smokers and obesity all appear to show a positive trend.
+            Was surprised to see TX at the top with the highest % of people not having healthcare.
+          </p>
+
+          <h3>Age vs. X</h3>
+          <p>Comparing age to % of no healthcare, smokers and obesity does not show a strong correlation or any sort of
+            trends.
+            We can see that smokers tend to be 34+ which seems to suggest newer generations are not smoking as much.
+          </p>
+
+          <h3>Household Income vs. X</h3>
+          <p>Household income doesnt seem to play a big role in having healthcare. Obesity and Smoking does seem to be
+            more prevalent on the states with lower income.
         </div>
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+
+  <!-- Footer-->
+  <div id="footer">
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
